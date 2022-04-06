@@ -13,6 +13,7 @@
 		EA40603627FDD43500F94760 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA40603427FDD43500F94760 /* Main.storyboard */; };
 		EA40603827FDD43600F94760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA40603727FDD43600F94760 /* Assets.xcassets */; };
 		EA40603B27FDD43600F94760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA40603927FDD43600F94760 /* LaunchScreen.storyboard */; };
+		EA40604627FDD93E00F94760 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40604527FDD93E00F94760 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EA40603727FDD43600F94760 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA40603A27FDD43600F94760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA40603C27FDD43600F94760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA40604527FDD93E00F94760 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,9 @@
 		EA40602D27FDD43500F94760 /* masakind */ = {
 			isa = PBXGroup;
 			children = (
+				EA40604827FDD95600F94760 /* Storyboard */,
+				EA40604427FDD89A00F94760 /* View Controller */,
+				EA40604227FDD88400F94760 /* Model */,
 				EA40602E27FDD43500F94760 /* AppDelegate.swift */,
 				EA40603027FDD43500F94760 /* SceneDelegate.swift */,
 				EA40603227FDD43500F94760 /* ViewController.swift */,
@@ -65,6 +70,28 @@
 				EA40603C27FDD43600F94760 /* Info.plist */,
 			);
 			path = masakind;
+			sourceTree = "<group>";
+		};
+		EA40604227FDD88400F94760 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA40604427FDD89A00F94760 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EA40604527FDD93E00F94760 /* HomeViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		EA40604827FDD95600F94760 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 				EA40603327FDD43500F94760 /* ViewController.swift in Sources */,
 				EA40602F27FDD43500F94760 /* AppDelegate.swift in Sources */,
 				EA40603127FDD43500F94760 /* SceneDelegate.swift in Sources */,
+				EA40604627FDD93E00F94760 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
