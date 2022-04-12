@@ -164,7 +164,6 @@
         <!--OverView-->
         <scene sceneID="woz-fx-K1Z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Aht-Lj-yKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="mE1-yw-YOP" userLabel="OverView" customClass="OverViewController" customModule="masakind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sxo-5G-AnD">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="1400"/>
@@ -638,6 +637,24 @@
                                                     <constraint firstAttribute="bottom" secondItem="KyB-QV-MTB" secondAttribute="bottom" id="wj4-EP-poR"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10D-OK-l0h">
+                                                <rect key="frame" x="42" y="1118" width="307" height="51"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="tintColor" red="0.78361636400000001" green="0.16783500630000001" blue="0.22884107479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" cornerStyle="capsule">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Start Cooking">
+                                                            <attributes>
+                                                                <font key="NSFont" size="17" name="SFPro-Semibold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="igZ-LO-V9Q" kind="show" id="azb-td-O5c"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -690,8 +707,25 @@
                         <outlet property="estimatedTimeText" destination="q71-v1-1rl" id="EFw-iv-BIf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aht-Lj-yKg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1253.8461538461538" y="1041.4691943127962"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VKH-lh-mpN">
+            <objects>
+                <viewController id="igZ-LO-V9Q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YlO-rf-q5M">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="QaO-qO-9v7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9FF-K1-xIy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGO-Yx-yVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="845"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3i0-wF-G4q">
@@ -728,7 +762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ck2-rQ-sEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247" y="837"/>
+            <point key="canvasLocation" x="1625" y="68"/>
         </scene>
         <!--Settings-->
         <scene sceneID="UCU-AL-Zw2">
