@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F703C59280560E300C9CF30 /* StepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F703C58280560E300C9CF30 /* StepsViewController.swift */; };
+		1F703C5B280570DC00C9CF30 /* step 1 - clean.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1F703C5A280570DC00C9CF30 /* step 1 - clean.mp4 */; };
 		EA40602F27FDD43500F94760 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40602E27FDD43500F94760 /* AppDelegate.swift */; };
 		EA40603127FDD43500F94760 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40603027FDD43500F94760 /* SceneDelegate.swift */; };
 		EA40603327FDD43500F94760 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40603227FDD43500F94760 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1F703C58280560E300C9CF30 /* StepsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsViewController.swift; sourceTree = "<group>"; };
+		1F703C5A280570DC00C9CF30 /* step 1 - clean.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "step 1 - clean.mp4"; path = "masakind/step 1 - clean.mp4"; sourceTree = "<group>"; };
 		EA40602B27FDD43500F94760 /* masakind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masakind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA40602E27FDD43500F94760 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA40603027FDD43500F94760 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		EA40602227FDD43500F94760 = {
 			isa = PBXGroup;
 			children = (
+				1F703C5A280570DC00C9CF30 /* step 1 - clean.mp4 */,
 				EA40602D27FDD43500F94760 /* masakind */,
 				EA40602C27FDD43500F94760 /* Products */,
 			);
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F703C5B280570DC00C9CF30 /* step 1 - clean.mp4 in Resources */,
 				EA40603B27FDD43600F94760 /* LaunchScreen.storyboard in Resources */,
 				EA40603827FDD43600F94760 /* Assets.xcassets in Resources */,
 				EA40603627FDD43500F94760 /* Main.storyboard in Resources */,

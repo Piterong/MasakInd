@@ -711,21 +711,39 @@
             </objects>
             <point key="canvasLocation" x="1253.8461538461538" y="1041.4691943127962"/>
         </scene>
-        <!--View Controller-->
+        <!--Steps View Controller-->
         <scene sceneID="VKH-lh-mpN">
             <objects>
-                <viewController id="igZ-LO-V9Q" sceneMemberID="viewController">
+                <viewController id="igZ-LO-V9Q" customClass="StepsViewController" customModule="masakind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YlO-rf-q5M">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZV-F0-ckZ">
+                                <rect key="frame" x="42" y="120" width="307" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray">
+                                    <imageReference key="image" image="play.circle.fill" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" image="Screen Shot 2022-04-12 at 15.11.06"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressPlayer:" destination="igZ-LO-V9Q" eventType="touchUpInside" id="lhW-Ld-IGn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="QaO-qO-9v7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="9FF-K1-xIy"/>
+                    <connections>
+                        <outlet property="playerButton" destination="MZV-F0-ckZ" id="WiL-5c-TW6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGO-Yx-yVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2142" y="845"/>
+            <point key="canvasLocation" x="2141.5384615384614" y="844.54976303317528"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3i0-wF-G4q">
@@ -846,6 +864,7 @@
         <image name="B3609177-34BC-4F19-9BC8-44E9DCA2C64F_1_105_c" width="769" height="1024"/>
         <image name="D6BCC38B-717D-4A92-A326-3FC25379BBFE_1_105_c" width="769" height="1024"/>
         <image name="Nasgor" width="509" height="339"/>
+        <image name="Screen Shot 2022-04-12 at 15.11.06" width="1530" height="1188"/>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="fork.knife" catalog="system" width="92" height="128"/>
@@ -853,6 +872,7 @@
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <image name="stopwatch" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
