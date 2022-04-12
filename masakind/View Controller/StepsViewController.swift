@@ -16,12 +16,31 @@
     class StepsViewController: UIViewController {
 
         @IBOutlet weak var playerButton: UIButton!
+        @IBOutlet weak var progressView: UIProgressView!
         @IBAction func pressPlayer(_ sender: UIButton) {
             playVideo()
         }
         
+        var timeLeft : Float = 60.0
+        var timeTotal : Float = 60.0
+        
+        @IBAction func startTimer(_ sender: UIButton) {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCounting), userInfo: nil, repeats: true)
+        }
+        
+        var timer = Timer()
+              
+        @objc func updateCounting(){
+            if timeLeft > 0 {
+                timeLeft -= 1
+                progressView.progress = Float((timeTotal-timeLeft)/timeTotal)
+        }
+        }
+   
+        
         override func viewDidAppear(_ animated: Bool) {
             super.viewDidAppear(animated)
+            progressView.progress = 0
         }
 
         private func playVideo() {

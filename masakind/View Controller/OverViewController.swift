@@ -23,10 +23,11 @@ class OverViewController: UIViewController {
         amountOfServings.layer.cornerRadius = 13
         createButton()
         navigationController?.navigationBar.prefersLargeTitles = true
-        navigationItem.title = "GANTI KE LIBRARY RESEP"
+        navigationItem.title = "Nasi Telur Pontianak"
         
 
     }
+    
     func createButton () {
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(
             image: UIImage(systemName: "heart"),

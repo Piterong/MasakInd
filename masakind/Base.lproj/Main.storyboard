@@ -698,7 +698,7 @@
                             <constraint firstItem="gBG-ZH-b2g" firstAttribute="width" secondItem="sxo-5G-AnD" secondAttribute="width" id="i2L-HX-0LT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="bacot" id="IBG-Fb-psq"/>
+                    <navigationItem key="navigationItem" title="Nasi Telur Pontianak" id="IBG-Fb-psq"/>
                     <size key="freeformSize" width="390" height="1400"/>
                     <connections>
                         <outlet property="amountOfServings" destination="JOD-Pv-S4y" id="nWl-At-rIj"/>
@@ -739,6 +739,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clean the ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ay-Kb-Ima">
+                                <rect key="frame" x="86" y="160" width="219" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z24-y0-vLB">
                                 <rect key="frame" x="40" y="411" width="309" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -748,13 +755,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clean the ingredients" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ay-Kb-Ima">
-                                <rect key="frame" x="86" y="160" width="219" height="29"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-GQ-loI">
+                                <rect key="frame" x="40" y="712" width="309" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="tintColor" red="0.78361636400000001" green="0.16783500630000001" blue="0.22884107479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stopwatch" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dt3-AH-STx">
+                                <rect key="frame" x="125" y="662" width="46" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.78361636400000001" green="0.16783500630000001" blue="0.22884107479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fQ-KP-fUT">
+                                <rect key="frame" x="153" y="658" width="113" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start Timer">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="SFPro-Semibold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startTimer:" destination="igZ-LO-V9Q" eventType="touchUpInside" id="Du4-Yu-DcZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QaO-qO-9v7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -762,6 +790,7 @@
                     <navigationItem key="navigationItem" id="9FF-K1-xIy"/>
                     <connections>
                         <outlet property="playerButton" destination="MZV-F0-ckZ" id="WiL-5c-TW6"/>
+                        <outlet property="progressView" destination="SLI-GQ-loI" id="Cuv-Yf-r73"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGO-Yx-yVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
