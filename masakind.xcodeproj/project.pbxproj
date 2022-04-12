@@ -14,6 +14,8 @@
 		EA40603827FDD43600F94760 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA40603727FDD43600F94760 /* Assets.xcassets */; };
 		EA40603B27FDD43600F94760 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA40603927FDD43600F94760 /* LaunchScreen.storyboard */; };
 		EA40604627FDD93E00F94760 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA40604527FDD93E00F94760 /* HomeViewController.swift */; };
+		EA5D6F4B280490E900319983 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6F4A280490E900319983 /* CollectionTableViewCell.swift */; };
+		EA5D6F4D2804911000319983 /* TableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D6F4C2804911000319983 /* TableCollectionViewCell.swift */; };
 		EADCCFEE2802CFD500A22E11 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADCCFED2802CFD500A22E11 /* OverViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		EA40603A27FDD43600F94760 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA40603C27FDD43600F94760 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA40604527FDD93E00F94760 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA5D6F4A280490E900319983 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		EA5D6F4C2804911000319983 /* TableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCollectionViewCell.swift; sourceTree = "<group>"; };
 		EADCCFED2802CFD500A22E11 /* OverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +90,8 @@
 			children = (
 				EA40604527FDD93E00F94760 /* HomeViewController.swift */,
 				EADCCFED2802CFD500A22E11 /* OverViewController.swift */,
+				EA5D6F4A280490E900319983 /* CollectionTableViewCell.swift */,
+				EA5D6F4C2804911000319983 /* TableCollectionViewCell.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -169,8 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EADCCFEE2802CFD500A22E11 /* OverViewController.swift in Sources */,
+				EA5D6F4B280490E900319983 /* CollectionTableViewCell.swift in Sources */,
 				EA40603327FDD43500F94760 /* ViewController.swift in Sources */,
 				EA40602F27FDD43500F94760 /* AppDelegate.swift in Sources */,
+				EA5D6F4D2804911000319983 /* TableCollectionViewCell.swift in Sources */,
 				EA40603127FDD43500F94760 /* SceneDelegate.swift in Sources */,
 				EA40604627FDD93E00F94760 /* HomeViewController.swift in Sources */,
 			);
